@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box and text shadow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            color: ;
+            padding: 20px;
+            margin: 10px;
+            background-color: aqua;
+            border: 2px solid black;
+            border-radius: 30px;
+            /* box-shadow: offset-x offset-y blur-radius spread-radius color ; */
+            box-shadow: 5px 5px 5px black;
+            /* box-shadow: inset 10px 10px 2px 2px black; */
+            /* For giving multiple box shadow to a particular box 
+            box-shadow: first shadow properties , second shadow properties , ..........; */
+            box-shadow: 10px 10px black , -10px -10px teal;
+
+        }
+
+        h1 {
+            /* text-shadow: offset-x offset-y color; */
+            text-shadow: 2px 2px white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h1>Card1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam saepe laudantium, aliquam ipsa quis similique quibusdam animi! Voluptates voluptatibus doloremque beatae quae impedit vero perspiciatis odit. Vel optio quisquam facilis beatae, tempora dolor unde!</p>
+        </div>
+        <div class="card" id="card-2">
+            <h1>Card2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam saepe laudantium, aliquam ipsa quis similique quibusdam animi! Voluptates voluptatibus doloremque beatae quae impedit vero perspiciatis odit. Vel optio quisquam facilis beatae, tempora dolor unde!</p>
+        </div>
+        <div class="card" id="card-3">
+            <h1>Card3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam saepe laudantium, aliquam ipsa quis similique quibusdam animi! Voluptates voluptatibus doloremque beatae quae impedit vero perspiciatis odit. Vel optio quisquam facilis beatae, tempora dolor unde!</p>
+        </div>
+    </div>
+</body>
+</html>

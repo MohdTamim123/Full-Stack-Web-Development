@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after selectors</title>
+    <style>
+        * {
+            font-family: cursive;
+            flex-wrap: wrap;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        header::before {
+            background: url('Images/wallhaven-k7v9yq_1920x1080.png') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        .navbar {
+            display: flex;
+        }
+        .search {
+            align-self: center;
+            /* float: left; */
+            margin-left: auto;
+            margin-right: 20px;
+            color:#a42019;
+            
+        }
+        .navigation {
+            display: flex;
+        }
+
+        .navigation li {
+            margin: 10px;
+            /* padding: 20px 15px; */
+            list-style: none;
+        }
+
+        .navigation a {
+            /* margin: 10px; */
+            padding: 20px;
+            text-decoration: none;
+            color: white;
+            border-radius: 30px;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .navigation a:hover {
+            background-color: #610933;
+            /* color: black; */
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            /* border: 2px solid red; */
+            height: 400px;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 30px;
+        }
+
+
+        h1 {
+            font-size: 3rem;
+            text-align: center;
+            overflow: auto;
+            /* margin: 10px; */
+            /* color: teal; */
+        }
+
+        input[type='search'] {
+            border: none;
+            border-radius: 10px;
+            padding: 3px;
+            color: #610933;
+        }
+
+        .btn{
+            border-radius: 10px;
+            padding: 3px 10px;
+        }
+
+        .btn:hover{
+            color: white;
+            background-color: #610933;
+        }
+
+        .content{
+            width: 1000px;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            font-size: 1em;
+        }
+
+        .sidebar a{
+            padding: 20px;
+            text-decoration: none;
+            color: white;
+            border-radius: 30px;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .sidebar li {
+            margin: 10px;
+            /* padding: 20px 15px; */
+            list-style: none;
+        }
+
+        .sidebar ul {
+            background-color: #a42019;
+            text-align: center;
+            padding-left: 0px;
+            padding: 20px;
+            border-radius: 20px;
+            border: 3px solid black;
+        }
+
+        .sidebar a:hover {
+            color: black;
+        }
+
+        footer {
+            background-color: #610933;
+            color: white;
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 40px;
+        }
+
+        .footer-item a{
+            padding: 10px;
+            text-decoration: none;
+            color: white;
+            border-radius: 30px;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .footer-item li {
+            margin: 10px;
+            list-style: none;
+        }
+
+        .footer-item ul{
+            padding-left: 0px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .copyright {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .footer-item ul a:hover {
+            background-color: #7a1143;
+        }
+
+        .footer-item p a:hover {
+            color:black;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="search">
+                <input type="search" placeholder="Search">
+                <button class="btn">Go</button>
+            </div>
+        </nav>
+    </header>
+    <div>
+        <h1>Welcome To College</h1>
+    </div>
+    <section class="content-holder">
+        <article class="content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis minima amet non tempore explicabo aut repellat ipsa molestiae! Delectus voluptas officiis distinctio, quidem ad ratione unde nam voluptatibus accusantium eaque labore perferendis pariatur fugit ut adipisci provident, facilis fugiat et dicta sapiente praesentium magni. Sunt eos omnis ad laboriosam corporis accusantium vitae odit dolorem rerum. Tenetur, architecto! Esse adipisci facere ab error fugiat illo voluptates necessitatibus quisquam, nam recusandae incidunt nobis accusantium deserunt quo neque, cumque, nisi natus architecto? Dolore laborum illo facere cupiditate dignissimos quo accusantium, iure, vel laboriosam vero voluptas iste error placeat repellendus reprehenderit atque animi. Ad odit eligendi earum cumque enim quibusdam cupiditate beatae error pariatur molestiae totam, quo id esse velit fugiat tempora corporis voluptate inventore consectetur rem quas impedit aperiam. Repellat similique eos eum quia ex veniam mollitia voluptatum sed earum totam et reprehenderit illo sequi nisi laudantium delectus a error, doloremque ea libero dolor ad, laboriosam assumenda quidem? Officia autem incidunt obcaecati, itaque voluptas maiores expedita officiis velit labore consequatur. Fugiat quidem at temporibus optio magnam nihil earum provident doloremque enim quo laudantium dolorem cupiditate autem architecto ab hic, modi cum eaque quia deserunt nisi! Placeat nulla qui dolore tempore libero illo quo hic reprehenderit, velit earum voluptate sint nisi ad, distinctio animi facilis temporibus odit. Aliquid dolor dolores a nostrum praesentium vero reprehenderit ratione sapiente reiciendis, placeat, quaerat dolore labore illo cum iure mollitia sint soluta officiis non, nesciunt molestiae ex? Ut corrupti assumenda aliquam, repudiandae error quia, aspernatur, dolor neque sit quibusdam corporis doloribus id sed odio iusto molestiae ipsam totam. Enim nisi vel recusandae minima dicta quis, esse, quae porro voluptas iure error, voluptatem magni ex obcaecati qui magnam explicabo quo iusto tempora animi ea nam voluptates consequuntur perspiciatis. Unde totam nostrum cupiditate quasi, debitis incidunt porro blanditiis eos consequuntur impedit beatae dolor ad! Porro nesciunt repellat voluptas fugit ratione eligendi et quos laudantium dolor. Blanditiis exercitationem est deserunt officiis quibusdam fuga, beatae distinctio nisi dolorum veritatis ratione possimus dolor numquam culpa maiores unde optio ipsa natus, eaque nesciunt commodi rerum, dignissimos voluptates. Hic minima nemo laboriosam quia dolore! Voluptates, animi consequuntur. Deleniti possimus omnis voluptatum vel nesciunt illum temporibus, voluptas
+        </article>
+        <aside class="sidebar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </aside>
+    </section>
+    <footer>
+        <div class="footer-item">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-item">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-item">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <address class="footer-item">
+            <h2>Google</h2>
+            <p>B-503, ASMITA ELEGANCE, NEAR APOLLO PHARMACY, MIRA ROAD EAST, THANE.</p>
+            <p>Email : <a href="mailto:mohdtamim5035323@gmail.com">mohdtamim5035323@gmail.com</a></p>
+            <p>Mobile : <a href="tel:+919369966943">+919369966943</a></p>
+        </address>
+    </footer>
+    <div class="copyright">
+        Copyright &copy;2022. All Rights Reserved.
+    </div>
+</body>
+
+</html>

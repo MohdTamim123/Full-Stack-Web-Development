@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More about CSS selectors</title>
+    <style>
+        /* This will affect each paragraph inside container  */
+        /* .container p {
+            border: 2px solid black;
+            color: black;
+            background-color: cyan;
+        } */
+
+        /* This will affect only those paragraph that are inside li  */
+        /* .container li p {
+            border: 2px solid black;
+            color: black;
+            background-color: cyan;
+        } */
+        /* Selectors ar used in this way if you just want to target a particular element  */
+        .container > .innerbox > ul > li > p {
+            border: 2px solid black;
+            color: black;
+            background-color: cyan;
+        }
+
+        /* This will affect only those paragraphs that are direct child of div tag */
+        /* div > p {
+            border: 2px solid black;
+            color: black;
+            background-color: cyan;
+        } */
+
+        /* This will affect only those paragraph whose sibling is div tag ie it will affect only those paragraph that comes just after div tag  */
+        /* div + p {
+            border: 2px solid black;
+            color: black;
+            background-color: cyan;
+        } */
+    </style>
+</head>
+<body>
+    <h1>More about CSS selectors</h1>
+    <div class="container">
+        <div class="innerbox">
+            <ul>
+                <li><p>This is first paragraph</p></li>
+                <li><p>This is second paragraph</p></li>
+            </ul>
+            <p>This is third paragraph</p>
+        </div>
+        <p>This is fourth paragraph</p>
+    </div>
+    <p>This is fifth paragraph</p>
+</body>
+</html>

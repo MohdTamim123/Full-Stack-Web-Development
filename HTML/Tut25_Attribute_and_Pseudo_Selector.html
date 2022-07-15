@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and pseudo selectors</title>
+    <style>
+        input{
+            display: block;
+            width: 200px;
+            margin: auto; 
+            color: black;
+        }
+
+        .list {
+            width: 200px;
+            margin: auto;
+        }
+
+        /* Pseudo Selectors  */
+        input[type='text']{
+            border: 2px solid black;
+            background-color: rgb(173, 247, 247);
+            padding: 20px;
+        }
+
+        input[type='submit']{
+            background-color: black;
+            color: white;
+            font-size: 15px;
+        }
+
+        input[type='submit']:hover{
+            background-color: rgba(0, 0, 0, 0.241);
+        }
+
+        /* nth child Selector */
+        li:nth-child(1){
+            color: red;
+        }
+
+        li:nth-child(2n+0){
+            color: blue;
+        }
+
+        /* Odd Child */
+        /* li:nth-child(odd){
+            background-color: gold;
+        } */
+        
+        /* Even Child */
+        li:nth-child(even){
+            background-color: gold;
+        }
+
+    </style>
+</head>
+<body>
+    <li class="list" id="list-1">Item1</li>
+    <li class="list" id="list-2">Item2</li>
+    <li class="list" id="list-3">Item3</li>
+    <li class="list" id="list-4">Item4</li>
+    <li class="list" id="list-5">Item5</li>
+    <li class="list" id="list-6">Item6</li>
+    <li class="list" id="list-7">Item7</li>
+    <li class="list" id="list-8">Item8</li>
+    <li class="list" id="list-9">Item9</li>
+    <li class="list" id="list-10">Item10</li>
+    <form action="" class="Registration">
+        <input type="text" name="name" placeholder="Enter your name">
+        <input type="tel" name="mobile_no" placeholder="Enter your phone number">
+        <input type="password" name="password" placeholder="Enter your password">
+        <input type="submit" value="Search">
+    </form>
+</body>
+</html>

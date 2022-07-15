@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Links and Buttons</title>
+    <style>
+        * {
+            font-family: cursive;
+        }
+        .container {
+            width: 600px;
+            border: 4px solid black;
+            margin: 20px auto;
+            background-color: rgb(131, 224, 224);
+            padding: 10px 5px;
+            border-radius: 10px;
+
+        }
+        h2 {
+            width: fit-content;
+            margin: auto;
+        }
+
+        #contact>a , #read>a {
+            text-decoration: none;
+        }
+
+        .button {
+            color: black;
+            border: none;
+            background-color: rgb(184, 230, 240);
+            font-size: 12px;
+            border-radius: 8px;
+            padding: 5px;
+            cursor: pointer;
+            margin: 10px;
+            font-weight: bolder;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /* Hover, visited, active are pseudo selectors */
+        .button:hover {
+            color: yellow;
+            background-color: black;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Styling Link and buttons using CSS</h2>
+        <p id="firstPara">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium sunt ducimus magnam iusto fuga sapiente reprehenderit harum. Quaerat culpa laboriosam animi quae nemo sit totam esse maiores quo reprehenderit, illo aliquid aliquam, provident ullam.</p>
+        <div id="read">
+            Read more : 
+            <a href="#">
+                <button class="button">Click Here</button>
+            </a>
+        </div>
+        <div id="contact">
+            Contact us :
+            <a href="#" class="button">Click Here</a>
+        </div>
+    </div>
+</body>
+</html>
